@@ -67,7 +67,7 @@ Before running this script, you need to replace `'person.jpg'` in the script wit
 
 ### 3. Follow the Tallest Person
 
-`follow_specific_person.py` continuously captures frames from the drone's camera and detects people in the room. It estimates the height of the tallest person detected using the Haar Cascade classifier and instructs the drone to maintain a desired distance from the tallest person.
+`follow_by_person.py` continuously captures frames from the drone's camera and detects people in the room. It estimates the height of the tallest person detected using the Haar Cascade classifier and instructs the drone to maintain a desired distance from the tallest person.
 
 ### 4. Detect and Follow Cameras
 
