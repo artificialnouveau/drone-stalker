@@ -57,16 +57,20 @@ pip install opencv-python-headless dlib numpy djitellopy2
 
 ### 1. Follow a Face for 30 seconds
 
-The first script (`follow_face_30s.py`) enables the Tello drone to detect and follow the first face it sees for up to 30 seconds, before moving on to track the next face it identifies. The drone also takes a photo of each face it detects.
+`follow_face_30s.py` enables the Tello drone to detect and follow the first face it sees for up to 30 seconds, before moving on to track the next face it identifies. The drone also takes a photo of each face it detects.
 
 ### 2. Follow a Specific Person
 
-The second script (`follow_specific_person.py`) uses a reference image to recognize a specific person's face. The drone will then follow this person around, taking a picture of the individual every minute.
+`follow_specific_person.py` uses a reference image to recognize a specific person's face. The drone will then follow this person around, taking a picture of the individual every minute.
 
 Before running this script, you need to replace `'person.jpg'` in the script with the path to your reference image.
 
-### 3. Detect and Follow Cameras
+### 3. Follow the Tallest Person
 
-The third script (`follow_camera.py`) uses the YOLO object detection model to identify cameras in the drone's field of view and follow them.
+`follow_specific_person.py` continuously captures frames from the drone's camera and detects people in the room. It estimates the height of the tallest person detected using the Haar Cascade classifier and instructs the drone to maintain a desired distance from the tallest person.
+
+### 4. Detect and Follow Cameras
+
+`follow_camera.py` uses the YOLO object detection model to identify cameras in the drone's field of view and follow them.
 
 ---
