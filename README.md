@@ -2,11 +2,6 @@
 
 This repository includes scripts that use a Tello drone to track specific targets, namely human faces and cameras. Each script is written in Python, and leverages Computer Vision libraries such as OpenCV, dlib, and YOLO for object detection and tracking.
 
----
-
-Certainly, I'll add a section to the README about running the scripts.
-
----
 
 ## Running the Scripts
 
@@ -39,11 +34,6 @@ Follow these steps to run a script:
 Remember to replace `'person.jpg'` in the `follow_specific_person.py` script with the path to your reference image before running the script.
 
 Similarly, ensure that the path to the YOLO model files in `follow_camera.py` is correct for your local setup.
-
----
-
-That's it! The script should now run, and your Tello drone should start tracking faces or cameras, depending on the script you're running.
-
 
 
 ## Dependencies
@@ -80,7 +70,3 @@ Before running this script, you need to replace `'person.jpg'` in the script wit
 The third script (`follow_camera.py`) uses the YOLO object detection model to identify cameras in the drone's field of view and follow them.
 
 ---
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
